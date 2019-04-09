@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 
 namespace Common
 {
-
     public enum CodeStatus
     {
         fail=0,

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -16,7 +17,7 @@ namespace Common
         /// </summary>
         /// <param name="en">枚举</param>
         /// <returns></returns>
-        private static EnumDefineAttribute GetEnumDefineAttribute(System.Enum en)
+        public static EnumDefineAttribute GetEnumDefineAttribute(System.Enum en)
         {
             string name = System.Enum.GetName(en.GetType(), en);
             FieldInfo field = en.GetType().GetField(name);
